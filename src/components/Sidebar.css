@@ -1,0 +1,52 @@
+/* Full-height sidebar and main content holder */
+:root { --brand: #ff4d6d; }
+
+.layout {
+  display: flex;
+  min-height: calc(100vh - 64px - 48px); /* header + footer space */
+}
+
+.sidenav {
+  height: calc(100vh - 64px); /* leave room for sticky header */
+  width: 220px;
+  position: sticky;
+  top: 64px; /* height of header */
+  background-color: #ffffff;
+  border-right: 1px solid rgba(0,0,0,0.06);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #111827;
+  display: block;
+  border-left: 3px solid transparent;
+  transition: all .2s ease;
+}
+
+.sidenav a:hover {
+  background: rgba(255,77,109,0.06);
+  color: var(--brand);
+}
+
+.sidenav a.active {
+  background: rgba(255,77,109,0.1);
+  color: var(--brand);
+  border-left-color: var(--brand);
+}
+
+.main {
+  flex: 1;
+  padding: 24px;
+}
+
+.card {
+  background: white;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(16, 24, 40, 0.04);
+}

@@ -1,0 +1,16 @@
+/* Fixed footer styles with brand flair */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #ffffffcc;
+  backdrop-filter: blur(8px);
+  color: #111827;
+  text-align: center;
+  padding: 14px 10px;
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.footer p { margin: 0; font-size: 14px; }
+.footer span { color: #ff4d6d; }
